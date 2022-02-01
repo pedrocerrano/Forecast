@@ -74,7 +74,7 @@ We want to build our URL piece by piece in `Postman`. The steps to creating a wo
 	2. I know this is also a challenge to read.. but these are the proper terms to be using.
 Congratulations! You just added your first `Query Parameter` to Postman! Press the send button and see what results you get!
 
-[image:82D9763D-29D6-4337-BE1C-CB733F34D4AF-98410-0001A9E91F25992D/Screen Shot 2022-01-31 at 11.39.39 PM.png]
+![postman Error](postmanError.png)
 
 Read the documentation to see what other `Query Parameters`  are not optional for the URL. 
 
@@ -162,9 +162,9 @@ Remember - all the data we want is locked in little `Collection` boxes. All we n
 
 **Pause** - if that didn’t make sense take a moment to review the lines above with the data you get back on Postman.
 
-This is the dictionary we are passing into our `fail able` initializer:
+This is the `dayDictionary` we are passing into our `fail able` initializer:
 
-[image:A8B639B8-28D6-4A4D-BB52-AD3038040913-98410-0001BA80C882F9A3/postmanLevels.png]
+![Postman Levels](postmanLevels.png)
 
 Okay, back to coding. To parse the values properly we will need to `quard` that we can `optionally typecast` the values as the types we expect. Have all of the following under the same `guard` statement.
 1. `guard let temp` and using Subscript Syntax from the `dayDictionary` assign the value of the key `”temp”`
@@ -178,7 +178,7 @@ Okay, back to coding. To parse the values properly we will need to `quard` that 
 
 Now, for the remaining properties, we need to parse down one more level to the `”weather” dictionary of type [String:Any]` This is where our `icon` and `description` values are housed.
 
-[image:06B9261B-488D-4D56-8BB3-DAA07F7874EE-98410-0001BB736FE4413B/weatherDict.png]
+![weather Dictionary](weatherDict.png)
 
 4. Create a constant named `weatherDict` and using Subscript Syntax from the `dayDictionary` assign the value using the key `”weather"`.
 	1. Optionally typecast this as a `[String:Any]`

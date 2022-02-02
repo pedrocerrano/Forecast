@@ -19,15 +19,15 @@ class Day {
  
     init?(dayDictionary:[String:Any], cityName: String ) {
         
-        let temp = dayDictionary["temp"] as! Double
-        let highTemp = dayDictionary["high_temp"] as! Double
-        let lowTemp = dayDictionary["low_temp"] as! Double
-        let validData = dayDictionary["valid_date"] as! String
+        guard let temp = dayDictionary["temp"] as? Double,
+        let highTemp = dayDictionary["high_temp"] as? Double,
+        let lowTemp = dayDictionary["low_temp"] as? Double,
+        let validData = dayDictionary["valid_date"] as? String,
         // We need to parse one additional level for the remaining values
-        let weatherDict = dayDictionary["weather"] as! [String:Any]
+        let weatherDict = dayDictionary["weather"] as? [String:Any],
         // Now we have access to the remaining values
-        let description = weatherDict["description"] as! String
-        let iconString = weatherDict["icon"] as! String
+        let description = weatherDict["description"] as? String,
+        let iconString = weatherDict["icon"] as? String else {return nil}
         
         self.temp = temp
         self.highTemp = highTemp

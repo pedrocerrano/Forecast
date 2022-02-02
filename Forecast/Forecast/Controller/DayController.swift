@@ -22,15 +22,15 @@ class DayContoller {
         urlComponents?.queryItems = [apiQuery,cityQuery,unitsQuery]
         
         guard let finalURL = urlComponents?.url else {return}
-        
-        URLSession.shared.dataTask(with: finalURL) { data, _, error in
+        print(finalURL)
+        URLSession.shared.dataTask(with: finalURL) { dayData, _, error in
             if let error = error {
                 print("There was an error fetching the data. The url is \(finalURL), the error is \(error.localizedDescription)")
                 completion(nil)
             }
             
-            guard let data = data else {
-                print("There was an error recieveing the data!)")
+            guard let data = dayData else {
+                print("There was an error recieveing the data!")
                 completion(nil)
                 return
             }

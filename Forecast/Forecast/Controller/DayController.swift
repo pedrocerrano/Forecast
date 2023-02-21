@@ -21,7 +21,28 @@ class DayController {
         guard let finalURL = urlComponents?.url else { completion(nil); return }
         print("Final URL: \(finalURL)")
         
-        
-        
+        URLSession.shared.dataTask(with: finalURL) { dayData, response, error in
+            if let error = error {
+                print("Error in Request: \(error.localizedDescription)")
+                completion(nil)
+                return
+            }
+            
+            if let response = response as? HTTPURLResponse {
+                print("Response Status Code: \(response.statusCode)")
+            }
+            
+            guard let data = dayData else { completion(nil); return }
+            do {
+                if let topLevel = try JSONSerialization.jsonObject(with: data, options: .fragmentsAllowed) as? [String : Any], let cityName = topLevel["city_name"] as? String, let daysArray = topLevel["data"] as? [[String : Any]] {
+                    
+                    let day = daysArray.compactMap { Day(dayDictionary: $0, cityName: cityName) }
+                    completion(day)
+                }
+            } catch {
+                completion(nil)
+                return
+            }
+        }.resume()
     }
 } //: CLASS

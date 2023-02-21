@@ -11,11 +11,11 @@ struct Constants {
     
 //    REFERENCE:
 //    https://api.weatherbit.io/v2.0/forecast/daily?city=Highland+Village,TX&units=I&key=fff2218d88514062ad8aa6cb02375e1e
-    struct WeatherURL {
+    struct DayURL {
         static let baseURL      = "https://api.weatherbit.io/v2.0/forecast/daily"
     }
     
-    struct WeatherKeys {
+    struct DayKeys {
         static let cityKey      = "city"
         static let cityValue    = "Highland+Village,TX"
         

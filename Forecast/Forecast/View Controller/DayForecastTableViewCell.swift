@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DayForcastTableViewCell: UITableViewCell {
+class DayForecastTableViewCell: UITableViewCell {
 
     @IBOutlet weak var dayNameLabel: UILabel!
     @IBOutlet weak var iconImageView: UIImageView!

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Djd-4K-B9b">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1IQ-in-1Ys">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,22 +17,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fGQ-i7-DCY">
-                                <rect key="frame" x="20" y="88" width="374" height="140.5"/>
+                                <rect key="frame" x="20" y="136" width="374" height="144.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Long City Name)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CAY-pm-IlN">
-                                        <rect key="frame" x="70" y="0.0" width="234.5" height="37"/>
+                                        <rect key="frame" x="59" y="0.0" width="256.5" height="41"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(95 F)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R1O-Gs-giD">
-                                        <rect key="frame" x="122.5" y="52" width="129.5" height="53"/>
+                                        <rect key="frame" x="122.5" y="56" width="129.5" height="53"/>
                                         <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="44"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Scattered clouds)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WLA-Tr-l8V">
-                                        <rect key="frame" x="116.5" y="120" width="141.5" height="20.5"/>
+                                        <rect key="frame" x="116.5" y="124" width="141.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -39,7 +40,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="zvx-yf-yC2">
-                                <rect key="frame" x="146" y="236.5" width="122" height="20.5"/>
+                                <rect key="frame" x="146" y="288.5" width="122" height="20.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ruk-Vg-pCA">
                                         <rect key="frame" x="0.0" y="0.0" width="55" height="20.5"/>
@@ -78,20 +79,20 @@
                                 </subviews>
                             </stackView>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odk-3G-czd">
-                                <rect key="frame" x="20" y="277" width="374" height="537.5"/>
+                                <rect key="frame" x="20" y="329" width="374" height="537.5"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="1CL-k5-bXR">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="537.5"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ysw-zF-cps">
-                                            <rect key="frame" x="4" y="4" width="366" height="529"/>
+                                            <rect key="frame" x="4" y="4" width="366" height="529.5"/>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <color key="separatorColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                             <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <prototypes>
-                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayCell" rowHeight="44" id="rPT-hL-3su">
-                                                    <rect key="frame" x="0.0" y="44.5" width="366" height="44"/>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dayCell" rowHeight="44" id="rPT-hL-3su" customClass="DayForecastTableViewCell" customModule="Forecast" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="50" width="366" height="44"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="rPT-hL-3su" id="Lag-Ol-vkr">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="44"/>
@@ -139,6 +140,11 @@
                                                     </tableViewCellContentView>
                                                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <color key="tintColor" red="0.99215686270000003" green="0.50196078430000002" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <connections>
+                                                        <outlet property="dayNameLabel" destination="oE5-zq-u5e" id="9Vm-47-d3n"/>
+                                                        <outlet property="forcastedHighLabel" destination="ntF-qA-kDR" id="JcA-KZ-7oL"/>
+                                                        <outlet property="iconImageView" destination="vz7-R1-LpY" id="Q6q-NI-BxU"/>
+                                                    </connections>
                                                 </tableViewCell>
                                             </prototypes>
                                         </tableView>
@@ -181,7 +187,7 @@
                         <outlet property="currentHighLabel" destination="5YO-CU-Qmg" id="QhP-6F-WGM"/>
                         <outlet property="currentLowLabel" destination="tCF-mn-jbz" id="aiy-NY-Hsk"/>
                         <outlet property="currentTempLabel" destination="R1O-Gs-giD" id="rCg-9n-Ze0"/>
-                        <outlet property="dayForcastTableView" destination="ysw-zF-cps" id="Qjj-ZB-KDL"/>
+                        <outlet property="dayForecastTableView" destination="ysw-zF-cps" id="Qjj-ZB-KDL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z7D-Qf-Zmw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -194,14 +200,17 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="1IQ-in-1Ys" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fuC-kN-R1t">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Djd-4K-B9b" kind="relationship" relationship="rootViewController" id="aVs-JF-tYR"/>
+                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YYY-ei-Tg9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-336.23188405797106" y="-198.21428571428569"/>
+            <point key="canvasLocation" x="314" y="-230"/>
         </scene>
     </scenes>
     <resources>

@@ -10,7 +10,7 @@ import UIKit
 class DayDetailsViewController: UIViewController {
 
     //MARK: - Outlets
-    @IBOutlet weak var dayForcastTableView: UITableView!
+    @IBOutlet weak var dayForecastTableView: UITableView!
     @IBOutlet weak var cityNameLabel: UILabel!
     @IBOutlet weak var currentTempLabel: UILabel!
     @IBOutlet weak var currentHighLabel: UILabel!
@@ -23,8 +23,8 @@ class DayDetailsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dayForcastTableView.dataSource = self
-        dayForcastTableView.delegate = self
+        dayForecastTableView.dataSource = self
+        dayForecastTableView.delegate = self
     }
     
     func updateViews() {
